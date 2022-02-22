@@ -1,0 +1,225 @@
+{% extends "partials/base.html" %}
+{% block content %}
+    <div class="sections" style="margin-top: 100px;">
+<!--        <section id="Currently Listening To" class="about-me-section">-->
+<!--            <div class="album-art">-->
+<!--                <img class="float-right" height="200" width="200" src='{{ track_info["album_artwork"] }}'>-->
+<!--            </div>-->
+<!--            <div class="float-left now-playing">-->
+<!--                <img class="currently-listening-header" src="/static/images/currently_playing.png">-->
+<!--                <div class="currently-listening-info">-->
+<!--                    <img class="current-img" src="/static/images/song.png">{{ track_info['track_name'] }}<br>-->
+<!--                    <img class="current-img" src="/static/images/artist.png">{{ track_info['artists'] }}<br>-->
+<!--                    <img class="current-img" src="/static/images/record.png">{{ track_info['album_name'] }}<br>-->
+<!--                </div>-->
+<!--                <br>-->
+<!--                <button class="btn btn-primary spotify-button" onclick="window.location.href='{{ track_info['link'] }}'">-->
+<!--                    <img class="spotify-img" src="/static/images/spotify.png">Listen On Spotify-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section id="My Music">
+            <div class="music-container">
+                <div class="music-wrapper">
+                    <div class="div-block-ap">
+                        <h1 class="welcome music-header">
+                            <img class="welcome-img" src="/static/images/my_tracks.png">
+                        </h1>
+                        <div class="line-divider music-header"></div>
+                        <div class="music-tracks">
+                            <div class="my-song-container">
+                                <iframe width="75%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/575128881&color=%236c643c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: sans-serif;font-weight: 100;"></div>
+                            </div>
+                            <div class="my-song-container">
+                                <iframe width="75%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/522872172&color=%23363636&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: sans-serif;font-weight: 100;"></div>
+                            </div>
+                        </div>
+                        <div class="music-tracks" style="margin-top: 15px;">
+                            <div class="my-song-container">
+                                <iframe width="75%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/379530290&color=%236f6b72&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family:sans-serif;font-weight: 100;"></div>
+                            </div>
+                            <div class="my-song-container">
+                                <iframe width="75%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/379530257&color=%236f6b72&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family:sans-serif;font-weight: 100;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Favorite Albums" class="favorite-section">
+            <div class="favorite-container">
+                <div class="favorite-wrapper">
+                    <div class="favorite-info-container">
+                        <div class="div-block-ap">
+                            <div class="favorite-info-wrapper">
+                                <h1 class="welcome music-header">
+                                    <img class="welcome-img" src="/static/images/favorite_albums.png">
+                                </h1>
+                                <div class="line-divider music-header"></div>
+                                <div class="grid">
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Blink-182.jpg" alt="blink-182">
+                                        <div class="middle">
+                                            blink-182 (2003)<br>blink-182
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Move_Along.jpg" alt="Move Along">
+                                        <div class="middle">
+                                            Move Along (2005)<br>The All-American Rejects
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Mellon_Collie_And_The_infinite_Sadness.jpg" alt="Mellon Collie and the Infinite Sadness">
+                                        <div class="middle">
+                                            Mellon Collie and the Infinite Sadness (1995)<br>The Smashing Pumpkins
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Trench.png" alt="Trench">
+                                        <div class="middle">
+                                            Trench (2018)<br>Twenty One Pilots
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/A_Brief_Inquiry_into_Online_Relationships.png" alt="A Brief Inquiry Into Online Relationships">
+                                        <div class="middle">
+                                            A Brief Inquiry Into Online Relationships (2018)<br>The 1975
+                                        </div>
+                                    </div>
+
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/The_Black_Parade.jpg" alt="The Black Parade">
+                                        <div class="middle">
+                                            The Black Parade (2006)<br>My Chemical Romance
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Lovely_Little_Lonely.jpg" alt="Lovely Little Lonely">
+                                        <div class="middle">
+                                            Lovely Little Lonely (2017)<br>The Maine
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Paramore.png" alt="Paramore">
+                                        <div class="middle">
+                                            Paramore (2013)<br>Paramore
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Continuum.jpg" alt="Continuum">
+                                        <div class="middle">
+                                            Continuum (2006)<br>John Mayer
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Forget_and_Not_Slow_Down.jpg" alt="Forget and Not Slow Down">
+                                        <div class="middle">
+                                            Forget and Not Slow Down (2009)<br>Relient K
+                                        </div>
+                                    </div>
+
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Parachutes.jpg" alt="Parachutes">
+                                        <div class="middle">
+                                            Parachutes (2000)<br>Coldplay
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Futures.jpg" alt="Futures">
+                                        <div class="middle">
+                                            Futures (2004)<br>Jimmy Eat World
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/When_We_All_Fall_Asleep,_Where_Do_We_Go .png" alt="When We All Fall Aslepp, Where Do We Go?">
+                                        <div class="middle">
+                                            When We All Fall Asleep, Where Do We Go? (2019)<br>Billie Eilish
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Hello_Hurricane.jpg" alt="Hello Hurricane">
+                                        <div class="middle">
+                                            Hello Hurricane (2009)<br>Switchfoot
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Box_Car_Racer.jpg" alt="Box Car Racer">
+                                        <div class="middle">
+                                            Box Car Racer (2002)<br>Box Car Racer
+                                        </div>
+                                    </div>
+
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/The_New_Abnormal.png" alt="The New Abnormal">
+                                        <div class="middle">
+                                            The New Abnormal (2020)<br>The Strokes
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Pure_Heroine.png" alt="Pure Heroine">
+                                        <div class="middle">
+                                            Pure Heroine (2013)<br>Lorde
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Lifeforms.jpg" alt="Lifeforms">
+                                        <div class="middle">
+                                            Lifeforms (2021)<br>Angels & Airwaves
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Nevermind.jpg" alt="Nevermind">
+                                        <div class="middle">
+                                            Nevermind (1991)<br>Nirvana
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Vampire_Weekend.jpg" alt="Vampire Weekend">
+                                        <div class="middle">
+                                            Vampire Weekend (2008)<br>Vampire Weekend
+                                        </div>
+                                    </div>
+
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Golden_Hour.png" alt="Golden Hour">
+                                        <div class="middle">
+                                            Golden Hour (2018)<br>Kacey Musgraves
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/American_Beauty_American_Psycho.png" alt="American Beauty/American Psycho">
+                                        <div class="middle">
+                                            American Beauty/American Psycho (2015)<br>Fall Out Boy
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/The_Big_Roar.jpg" alt="The Big Roar">
+                                        <div class="middle">
+                                            The Big Roar (2011)<br>The Joy Formidable
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Razzmatazz.jpeg" alt="Razzmatazz">
+                                        <div class="middle">
+                                            Razzmatazz (2020)<br>I DON'T KNOW HOW BUT THEY FOUND ME
+                                        </div>
+                                    </div>
+                                    <div class="card album-card">
+                                        <img class="favorite-album" src="static/images/albums/Passive_Me,_Aggressive_You.png" alt="Passive Me, Aggressive You">
+                                        <div class="middle">
+                                            Passive Me, Aggressive You (2010)<br>The Naked and Famous
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+

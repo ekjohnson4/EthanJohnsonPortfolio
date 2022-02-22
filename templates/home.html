@@ -1,0 +1,160 @@
+{% extends "partials/base.html" %}
+{% block content %}
+<!--dark: #1b1b1b
+    primary: #5B7553;
+    secondary: #222222
+    warning: #F7934C
+    danger: #8c271E
+    white: #ffffff
+    blue: #124E78-->
+    <div class="sections">
+        <section id="About Me" class="about-me-section">
+            <div class="about-me-container animate-opacity-in">
+                <div class="about-me-wrapper">
+                    <div class="about-me-info-container">
+                        <div class="div-block-ap">
+                            <div class="about-me-info-wrapper">
+                                <h1 class="welcome">
+                                    <img class="welcome-img" src="/static/images/welcome.png">
+                                </h1>
+                                <div class="line-divider"></div>
+                                <div class="section-text">
+                                    Programmer, musician, and home renovator. I'll be updating this site to delve into
+                                    my various interests and projects. This site was built using Flask, Bootstrap, and
+                                    jQuery.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-me-artwork-wrapper">
+                        <a class="artwork-link">
+                            <img class="image" src="/static/images/B_Shot_2.jpg" loading="lazy" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section id="Timeline" class="timeline-section">
+            <div class="timeline-container">
+                <div class="timeline-wrapper">
+                    <div class="timeline-info-container">
+                         <div class="timeline">
+                            <div class="container right">
+                                <div class="content">
+                                    <h2>Hartselle High School</h2>
+                                    <h5>August 2010 - May 2014</h5>
+                                    <p>Earned honors diploma with a 4.0 GPA in 2014.</p>
+                                    <ul>
+                                        <li>HHS Drumline Section Leader</li>
+                                        <ul>
+                                            <li>Alabama District I Honor Band 2010-2014</li>
+                                            <li>Jazz Band Drummer</li>
+                                            <li>Band Secretary</li>
+                                        </ul>
+                                        <li>HHS Ambassadors Vice-President</li>
+                                        <li>Selected for the Youth Leadership Development Program (YLDP)</li>
+                                        <li>National Honor Society</li>
+                                        <li>Mu Alpha Theta</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="container right">
+                                <div class="content">
+                                    <h2>Hartselle Aquatic Center</h2>
+                                    <h5>May 2013 - August 2016 (Summers)</h5>
+                                    <p>I lifeguarded and saved the lives and whatnot.</p>
+                                </div>
+                            </div>
+                             <div class="container right">
+                                <div class="content">
+                                    <h2>The University of Alabama</h2>
+                                    <h5>August 2014 - May 2019</h5>
+                                    <p>Graduated with a 3.31 GPA in 2019.</p>
+                                    <ul>
+                                        <li>Majored in Computer Science and minored in Mathematics.</li>
+                                        <li>Developed mobile application to improve campus experience for students. (<a href="https://www.youtube.com/watch?v=CJr7WGcF044&t=1s&ab_channel=EthanJohnson">Demo</a>)</li>
+                                        <li>Member of Alabama Association for Computing Machinery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container right">
+                                <div class="content">
+                                    <h2>Command Alkon</h2>
+                                    <h5>January 2017 - August 2018 (Three rotations - one year experience)</h5>
+                                    <p>Co-op position in Birmingham, Alabama where I worked 40 hours a week.</p>
+                                    <ul class="timeline-list">
+                                        <li>
+                                            During my first term, I worked as an SDET writing test scripts in Python,
+                                            handled various maintenance duties involving both SQL and Python, and helped
+                                            with development of the VM manager which was developed in PowerShell.
+                                        </li>
+                                        <li>
+                                            Moving to product development during my second term allowed me to work with
+                                            Delphi and SQL to improve COMMANDqc, on of the company's flagship products.
+                                            Work during this time was completed in an agile environment utilizing scrum.
+                                        </li>
+                                        <li>
+                                            My final term with the company had me shift back to the SDET team, but this
+                                            time to help build a new automated testing framework from the ground up in
+                                            JavaScript to be used by all developers.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="container right">
+                                <div class="content">
+                                    <h2>Torch Technologies</h2>
+                                    <h5>June 2019 - February 2022</h5>
+                                    <p class="timeline-subtitle">
+                                        First job out of school in Huntsville, Alabama working on the IAMDSIM team to
+                                        simulate the IBCS missile system.
+                                    </p>
+                                    <ul class="timeline-list">
+                                        <li>
+                                            Worked on analysis team developing tools and performing analysis in support
+                                            of our sim.
+                                        </li>
+                                        <li>
+                                            Tools built included a regression test metric web app, a search
+                                            engine for the classified network, a web app to make plotting tactical data
+                                            easier, and an improved way to generate MCFs (xmls to detail the scenario the
+                                            sim will run). All listed tools were built in a full-stack environment with
+                                            the Flask framework, Python, HTML, CSS, JavaScript, and SQLite.
+                                        </li>
+                                        <li>
+                                            Maintained the original tool used to generate MCFs so analysts could
+                                            quickly acquire the files needed to run the sim.
+                                        </li>
+                                        <li>
+                                            Worked on the sim utilizing Java to implement new features such as the Asset
+                                            Selection Logic.
+                                        </li>
+                                        <li>
+                                            Generated plots with Plotly, Matplotlib, and Jupyter Notebooks to view
+                                            tactical data in an informative manner.
+                                        </li>
+                                        <li>
+                                            Coordinated project tasks between IAMDSIM team and MSS-2 team while also
+                                            performing HWIL runs for flight tests.
+                                        </li>
+                                        <li>
+                                            All aforementioned tasks helped support nine flight tests total.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<!--    <div id="like_button_container"></div>-->
+<!--    &lt;!&ndash; Load React. &ndash;&gt;-->
+<!--    &lt;!&ndash; Note: when deploying, replace "development.js" with "production.min.js". &ndash;&gt;-->
+<!--    <script src="/static/react/react.development.js" crossorigin></script>-->
+<!--    <script src="/static/react/react-dom.development.js" crossorigin></script>-->
+<!--    &lt;!&ndash; Load our React component. &ndash;&gt;-->
+<!--    <script src="/static/doccat/like_button.js"></script>-->
+{% endblock %}
+

@@ -1,0 +1,4 @@
+{
+    "BACKEND_ADDRESS": "https://localhost:8080/",
+    "PORT": "5000"
+}
