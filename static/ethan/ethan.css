@@ -1278,6 +1278,28 @@
     }
 }
 
+.error{
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #124E78;
+    font-size: 40px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 1215px) {
+    .error{
+        min-width: 370px;
+        font-size: 35px;
+        line-height: 34px;
+        max-width: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 .btn-danger {
   color: #fff;
