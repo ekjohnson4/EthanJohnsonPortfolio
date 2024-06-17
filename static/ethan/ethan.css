@@ -1253,6 +1253,31 @@
     height: auto;
 }
 
+.error-wrapper{
+    display: grid;
+    height: 100%;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.error-info-wrapper{
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    margin-bottom: 50px;
+    -webkit-box-flex: 0;
+    flex: 0 auto;
+}
+
+@media only screen and (max-width : 1215px) {
+    .error-info-wrapper{
+        margin-bottom: 0;
+    }
+}
+
 
 .btn-danger {
   color: #fff;

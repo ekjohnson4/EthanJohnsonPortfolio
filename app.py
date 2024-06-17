@@ -34,6 +34,9 @@ def properties():
 def music():
     return render_template('music.html', track_info='')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 # @app.route('/music', methods=['GET', 'POST'])
 # def music():
