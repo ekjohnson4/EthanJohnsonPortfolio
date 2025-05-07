@@ -861,7 +861,7 @@
     height: 2px;
     margin-top: 10px;
     margin-bottom: 20px;
-    background-color: #124E78;
+    background: linear-gradient(to right, #124E78, #1b1b1b);
     box-sizing: border-box;
     max-width: 480px;
 }
@@ -870,6 +870,7 @@
     .line-divider{
         margin-left: auto;
         margin-right: auto;
+        background: linear-gradient(to right, #1b1b1b, #124E78, #1b1b1b);
     }
 }
 
